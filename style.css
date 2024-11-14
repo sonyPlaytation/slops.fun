@@ -113,6 +113,11 @@ p
     line-height: 1.5em;
 }
 
+#subheader
+{
+    max-width: 65%
+}
+
 p strong
 {
     color: #00ff95;
@@ -123,8 +128,8 @@ p strong
 {
     float:right;    
     width: 50%;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin: auto 2%;
+    margin-top: 5em;
     font-size: 0.85em;
     font-weight: bold;
     color: #00ff95;
@@ -167,12 +172,52 @@ a{
 
 #links a
 {
-    font-size: 2em;
+    font-size: 1.7em;
     color: #ffb700;
     text-shadow: 2px 2px 0 rgb(119, 0, 69);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
+}
+
+#links svg
+{
+    width: 1em;
+    fill: white;
+}
+
+.linkItem
+{
+    text-align: center;
+}
+
+#discordBanner:hover
+{
+    background-image: none;
+    background-color:#6131c1;
+    box-shadow:0px 0.35em#381b71;
+}
+
+#discordBanner
+{
+    background-image: linear-gradient(#5865F2, #7118be);
+    margin: 3% auto;
+    
+    text-align: center;
+    padding: 2em;
+    padding-bottom:1.15em;
+    width: 80%;
+    max-width: 600px;
+    box-shadow:0px 0.35em#610f82;
+    border-radius:1em;
+    display: flex;
+}
+
+#discordBanner svg
+{
+    margin: auto;
+    height: 4em;
 }
 
 #musabout
@@ -265,8 +310,9 @@ a{
 
 iframe
 {
-    border-radius: 15px;
     box-shadow: 0px 0px 1em #000000;
+    border-radius: 1em;
+    
 }
 
 #headnav a:visited{color: #ff6478;}
@@ -280,6 +326,8 @@ figcaption a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
 
 a:visited{color: #ff6478;}
 a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
+
+
 
 @supports(display: flex)
 {
@@ -302,8 +350,12 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
     #links
     {
         display:flex;
-        flex: auto;
-        justify-content:space-between;
+        justify-content:space-around;
+    }
+
+    .linkItem
+    {
+        flex: 1;
     }
 
     .player
@@ -379,6 +431,7 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         margin-left: auto;
         margin-right: auto;
         align-content: space-around;
+        max-width: 45%;
     }
 }
 
@@ -515,6 +568,17 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
     #art:hover
     {
         scale: 100%;
+    }
+
+    #links
+    {
+        font-size: 0.8em;
+    }
+
+    #subheader
+    {
+        text-align: center;
+        max-width: 100%
     }
 
 }
