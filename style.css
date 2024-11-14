@@ -16,7 +16,7 @@ main{
     margin-right: 5%;
     
     box-shadow: 0px 0px 1em #000000;
-    min-width: 500px;
+    min-width: 400px;
     padding-bottom: 0px;
   }
 
@@ -354,20 +354,55 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         scale: 110%;
         transition: scale 0.25s ease-in-out ;
     }
+
+    #mus
+    {
+        display: flex;
+    }
+
+    .music
+    {
+        margin-left: auto;
+        margin-right: auto;
+        align-content: space-around;
+    }
 }
 
-@media(max-width: 600px)
+
+@media(max-width: 850px)
 {
+    #herobanner
+    {
+        font-size: 3em;
+    }
+
+    #headnav
+    {
+        font-size: 1em;
+    }
+
+    #newtHEAD
+    {
+        font-size: 6em;
+    }
+
+    #canonHEAD
+    {
+        font-size: 6em;
+    }
+
     body
     {
         font-size: 0.75em;
+        
     }
 
     main
     {
-        margin-left: 0px;
-        margin-right: 0px;
-        min-width: 100%;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     #herobanner
@@ -467,57 +502,6 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         scale: 100%;
     }
 
-}
-
-@media(max-width: 850px)
-{
-    #herobanner
-    {
-        font-size: 3em;
-    }
-
-    #headnav
-    {
-        font-size: 0.65em;
-    }
-
-    #newtHEAD
-    {
-        font-size: 6em;
-    }
-
-    #canonHEAD
-    {
-        font-size: 6em;
-    }
-
-    #artcol figcaption
-    {
-        display: none;
-    }
-
-    #art
-    {
-        margin: 0px;
-        padding: 0px;
-        display: inline-block;
-        text-decoration: none;
-
-        scale: 90%;
-    }
-
-    #art:hover
-    {
-        scale: 100%;
-    }
-}
-
-@media(min-width: 601px)
-{
-    .gamedescMOBILE
-    {
-        display:none;
-    }
 }
 
 @media(min-width: 1921px)
