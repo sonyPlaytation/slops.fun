@@ -1,0 +1,550 @@
+
+body
+{
+    background-color: #230f27;
+    background-image: url("images/brickBG_big.png");
+    background-position-x: center;
+}
+
+main{
+    border-radius:50px;
+    
+    color: #ffb700;
+    font-family: Verdana;
+    font-size: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    box-shadow: 0px 0px 1em #000000;
+    min-width: 500px;
+    padding-bottom: 0px;
+  }
+
+#disclaimer{
+    margin: 0;
+    font-size: 0.75em;
+    background-color: red;
+}
+
+#herobanner
+{
+    font-size:5em;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    background-color: #562067;
+    background-image: url("images/wavy.gif");
+    padding: 0.5em;
+    text-shadow: 3px 3px 0 rgb(218, 0, 127);
+    font-weight: bold;
+    margin-bottom: 0px;
+    container-name: herobanner;
+}
+
+h1 em
+{
+    width:100%;
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+}
+
+.artDesc
+{
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+
+#wrapper
+{
+    border-radius:50px;
+    background-color:#34143e;
+    text-align: center;
+    max-width: 100%;
+}
+
+#headnav{
+    padding: 1em;
+    background-color:#562067;
+}
+
+#headnav a
+{
+    font-size: 2em;
+    color: #ffb700;
+    text-shadow: 2px 2px 0 rgb(119, 0, 69);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#artnav{
+    padding: 1em;
+    background-color:#562067;
+}
+
+#artnav a
+{
+    font-size: 2em;
+    color: #ffb700;
+    text-shadow: 2px 2px 0 rgb(119, 0, 69);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#about
+{
+    font-size: 1.25em;
+    padding-left: 5%;
+    text-align: left;
+    text-shadow: 2px 2px 0 rgb(164, 0, 96);
+    width: 50%;
+    max-width: 50%;
+}
+
+p
+{
+    line-height: 1.5em;
+}
+
+p strong
+{
+    color: #00ff95;
+    text-shadow: 2px 2px 0 rgb(0, 74, 164);
+}
+
+#img1
+{
+    float:right;    
+    width: 50%;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #00ff95;
+    text-shadow: 3px 3px 0 rgb(0, 74, 164);
+}
+
+#compy
+{
+    width: 75%;
+    max-width: 700px;
+    border-radius: 30px;
+    box-shadow: 0px 0.1em 0.75em black
+}
+
+footer
+{
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    background-color:#562067;
+    padding: 1em;
+}
+
+a{
+    color: #ffb700;
+    text-shadow: 2px 2px 0 rgb(119, 0, 69);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#copyright
+{
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: verdana;
+    color:#ffb700;
+}
+
+#links a
+{
+    font-size: 2em;
+    color: #ffb700;
+    text-shadow: 2px 2px 0 rgb(119, 0, 69);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#musabout
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 1%;
+    text-align: left;
+    text-shadow: 2px 2px 0 #a40060;
+}
+
+#gamesabout
+{
+    text-shadow: 2px 2px 0 #a40060;
+}
+
+#newtHEAD
+{
+    text-align: center;
+
+    margin: 0px;
+    padding-bottom: 0.25em;
+    font-size: 8em;
+    color:#00ff95;
+    text-shadow: 3px 3px 0 rgb(0, 74, 164);
+    
+}
+
+#canonHEAD
+{
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 0%;
+    font-size: 8em;
+    color:#fff5e5;
+    text-shadow: 0px 0px 5px rgb(255, 230, 0);
+}
+
+.trailer
+{
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin-bottom: 1em;
+}
+
+.itchio
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+.caseleft
+{
+    margin-left: 2%;
+    align-content: center;
+    max-width: 48%;
+}
+
+.gamedesc
+{
+    display:block;
+    float: right;
+    padding:1em;
+    margin-right: 2%;
+    margin-top: 0%;
+    border-radius: 1em;
+    background-color:#562067;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: left;
+    max-width: 43%;
+    box-shadow: 0px 0.5em 0.75em black
+}
+
+iframe
+{
+    border-radius: 15px;
+    box-shadow: 0px 0px 1em #000000;
+}
+
+#headnav a:visited{color: #ff6478;}
+#headnav a:hover{color: #00ff95; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
+
+#links a:visited{color: #ff6478;}
+#links a:hover{color: #00ff95; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
+
+figcaption a:visited{color: #ff6478;}
+figcaption a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
+
+a:visited{color: #ff6478;}
+a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
+
+@supports(display: flex)
+{
+    #headnav
+    {
+        display: flex;
+        grid-template-rows: 40px;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    #artnav
+    {
+        display: flex;
+        grid-template-rows: 40px;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    #links
+    {
+        display:flex;
+        flex: auto;
+        justify-content:space-between;
+    }
+
+    .player
+    {
+        display:flex;
+        flex: row;
+    }
+
+    #artBox
+    {
+        margin: 2%;
+        padding: 1em;
+        border-radius: 1em;
+        background-color:#562067;
+        box-shadow: 0px 10px 40px#000000;
+        display: grid;
+        align-content: space-between;
+    }
+
+    .artrow
+    {
+        display: flex;
+        
+    }
+
+    #artcol
+    {
+        margin-left: auto;
+        margin-right: auto;
+        align-content: space-around;
+    }
+
+    #artcol img 
+    {
+        max-height: 500px;
+        display: block;
+        max-width: 100%;
+        border-radius: 1em;
+        box-shadow: 0px 0px 10px#000000;
+    }
+    #artcol figcaption
+    {
+        text-align: center;
+        margin: 0.5em;
+    }
+
+    #art
+    {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        display: inline-block;
+        text-decoration: none;
+
+        scale: 100%;
+        transition: scale 0.15s ease-in-out ;
+    }
+
+    #art:hover
+    {
+        scale: 110%;
+        transition: scale 0.25s ease-in-out ;
+    }
+}
+
+@media(max-width: 600px)
+{
+    body
+    {
+        font-size: 0.75em;
+    }
+
+    main
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        min-width: 100%;
+    }
+
+    #herobanner
+    {
+        font-size:3em;      
+        padding: 0.3em;
+    }
+
+    nav
+    {
+        font-size: 0.75em;
+    }
+
+    #img1
+    {
+        float: none;
+        width:auto;
+    }
+
+    #compy
+    {
+       
+        max-width:100%;
+
+       height: auto;
+    }
+
+    #musabout
+    {
+        padding: 1%;
+        text-align: center;
+    }
+
+    #about
+    {   
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 98%;
+        max-width: 98%;
+        font-weight: bold;
+    }
+
+    .trailer
+    {
+        width: 100%;
+        border-bottom: 50px;
+    }
+
+    .caseleft
+    {
+        margin:2%;
+        margin-top: 0%;
+        align-content: center;
+        max-width: 100%;
+    }
+
+    .gamedesc
+    {
+        display:none;
+    }
+
+    .gamedescMOBILE
+    {
+        padding:1em;
+        border-radius: 1em;
+        background-color:#562067;
+
+        font-size: 1.25em;
+        font-weight: bold;
+        text-align: left;
+        float:none;
+        max-width: 100%;
+    }
+
+    .itchio
+    {
+        width: 100%;
+    }   
+
+    #artcol figcaption
+    {
+        display: none;
+    }
+
+    #art
+    {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        text-decoration: none;
+
+        scale: 90%;
+    }
+
+    #art:hover
+    {
+        scale: 100%;
+    }
+
+}
+
+@media(max-width: 850px)
+{
+    #herobanner
+    {
+        font-size: 3em;
+    }
+
+    #headnav
+    {
+        font-size: 0.65em;
+    }
+
+    #newtHEAD
+    {
+        font-size: 6em;
+    }
+
+    #canonHEAD
+    {
+        font-size: 6em;
+    }
+
+    #artcol figcaption
+    {
+        display: none;
+    }
+
+    #art
+    {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        text-decoration: none;
+
+        scale: 90%;
+    }
+
+    #art:hover
+    {
+        scale: 100%;
+    }
+}
+
+@media(min-width: 601px)
+{
+    .gamedescMOBILE
+    {
+        display:none;
+    }
+}
+
+@media(min-width: 1921px)
+{
+    #herobanner
+    {
+        font-size: 8em;
+    }
+
+    #about
+    {
+        font-size: 1.55em;
+    }
+
+    #musabout
+    {
+        font-size: 1.5em;
+    }
+
+    #artDesc
+    {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+}
+
+
+
