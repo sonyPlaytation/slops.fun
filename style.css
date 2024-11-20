@@ -37,7 +37,6 @@ main{
     text-shadow: 3px 3px 0 rgb(218, 0, 127);
     font-weight: bold;
     margin-bottom: 0px;
-    container-name: herobanner;
 }
 
 h1 em
@@ -57,8 +56,6 @@ h3
     text-align: center;
     margin-bottom: 1em;
 }
-
-
 
 #wrapper
 {
@@ -81,6 +78,16 @@ h3
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
+
+    transition: scale 0.25s ease-out;
+}
+
+#headnav a:hover{
+    /*rotate: 360deg;
+    transition: rotate 0.35s ease-in-out;*/
+    
+    scale: 1.5;
+    transition: scale 0.5s ease-in-out;
 }
 
 #artnav{
@@ -115,8 +122,11 @@ p
 
 #subheader
 {
-    max-width: 65%
+    margin: auto;
+    max-width: 95%;
+    padding-bottom: 1.5em; 
 }
+
 
 p strong
 {
@@ -190,13 +200,14 @@ a{
 .linkItem
 {
     text-align: center;
+    scale:100%;
+    transition: scale 0.25s ease-out;
 }
 
-#discordBanner:hover
+.linkItem:hover
 {
-    background-image: none;
-    background-color:#6131c1;
-    box-shadow:0px 0.35em#381b71;
+    scale:110%;
+    transition: scale 0.15s ease-in-out;
 }
 
 #discordBanner
@@ -212,6 +223,18 @@ a{
     box-shadow:0px 0.35em#610f82;
     border-radius:1em;
     display: flex;
+
+    scale:100%;
+    transition: scale 0.25s ease-out;
+}
+
+#discordBanner:hover
+{
+    background-image: none;
+    background-color:#6131c1;
+    box-shadow:0px 0.35em#381b71;
+    scale:105%;
+    transition: scale 0.65s ease-in-out;
 }
 
 #discordBanner svg
@@ -222,10 +245,7 @@ a{
 
 #musabout
 {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: auto;
-    text-align: left;
+ 
     text-shadow: 2px 2px 0 #a40060;
 }
 
@@ -361,7 +381,7 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
     .player
     {
         display:flex;
-        flex: row;
+        flex: 1;
     }
 
     #artBox
