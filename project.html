@@ -11,21 +11,110 @@
     <main>
         
         <div id="wrapper">
-            <h1 id="herobanner"><em>sonyPlaytation</em></h1>
-            <h3 id="disclaimer">this website is under construction!!</h3>
+          <h1 id="herobanner"><em>sonyPlaytation</em></h1>
+          <h3 id="disclaimer">this website is under construction!!</h3>
 
-            <nav id="headnav">
-                <a href="index.html">Home</a>
-                <a href="contact.html">Links</a>
-                <a href="art.html">Art</a>
-                <a href="music.html">Music</a>
-                <a href="games.html">Games</a>
-                <a href="project.html">Project</a>
-            </nav>
+          <nav id="headnav">
+              <a href="index.html">Home</a>
+              <a href="contact.html">Links</a>
+              <a href="art.html">Art</a>
+              <a href="music.html">Music</a>
+              <a href="games.html">Games</a>
+              <a href="project.html">Project</a>
+          </nav>
+
+          <hr width="99.5%;" color="#562067" size="3">
+
+          <div id="musabout">
+              
+            <h2>My Favourite Games!</h2>
+
+            <p id="subheader">Here is a list of my favourite video games!Click the name to watch my stream of it.
+              <br>Data is taken from <a href="https://docs.google.com/spreadsheets/d/1CjuLU-R4wi_EAUiUCf89jdC1MnTw3vbfUZWCBfpRY7I/edit?usp=sharing">this spreadsheet</a>
+            </p>
+
+          </div>
+          <hr width="99.5%;" color="#562067" size="3">
+
+            <table id="favGames">
+
+              <thead>
+                <tr>
+                  <th id="TL">Name</th>
+                  <th>Platform</th>
+                  <th>Rating</th>
+                  <th id="TR">Notes</th>
+                </tr>
+              </thead>
+
+              <tr>
+                <td><a href="https://www.youtube.com/playlist?list=PL4PwAi9VYNvhG0PwoDXdLy0FI95iQqqz_">Dark Souls</a></td>
+                <td>PC</td>
+                <td>10/10</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                
+                <td><a href="https://www.youtube.com/playlist?list=PL4PwAi9VYNvjAbGBTWMn1tYYzo_Yl0OjF">Silent Hill 2</a></td>
+                <td>PS2</td>
+                <td>9/10</td>
+                <td>Played on PC with the Enhanced Edition mod.</td>
+              </tr>
+
+              <tr>
+                <td>Street Fighter III: 3rd Strike</td>
+                <td>Arcade</td>
+                <td>9.5/10</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><a href="https://youtu.be/bl7aarrTZRQ?si=bHk6VhhBxCpWeLNX">Fallout: New Vegas</a></td>
+                <td>PC</td>
+                <td>9/10</td>
+                <td></td>
+              </tr>
+              
+              <tr>
+                <td><a href="https://youtu.be/jFwm9-vE_lo?si=s4VhKD16CaQAtSUC">Pizza Tower</a></td>
+                <td>PC</td>
+                <td>9/10</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td><a href="https://youtube.com/playlist?list=PL4PwAi9VYNvhmtzzS1b2fJ5WthasN9fQ0&si=jtZ2MbrGRfB1ZItO">Resident Evil 4</a></td>
+                <td>PC</td>
+                <td>8.5/10</td>
+                <td></td>
+              </tr>
+
+            </table>
 
             <hr width="99.5%;" color="#562067" size="3">
 
-            
+            <form>
+              <strong>Recommend a game:</strong>
+
+              <br> <br>
+
+              <strong>Platform:</strong><br>
+              <label>PC</label><input type="checkbox" name="platform"> 
+              <label>PS5</label><input type="checkbox" name="platform"> 
+              <label>Switch</label><input type="checkbox" name="platform"> 
+              <label>Other</label><input type="checkbox" name="platform"> 
+              
+              <br> <br>
+
+              <label>Stream</label><input type="radio" name="whenPlay" required>
+              <label>Play Offline</label><input type="radio" name="whenPlay">
+
+              <br> <br>
+
+              <label for="gameName"><strong>Game: </strong></label><input type="text" name="gameName" required> 
+              <input type="submit" >
+            </form>
 
             <hr width="99.5%;" color="#562067" size="3">
             
