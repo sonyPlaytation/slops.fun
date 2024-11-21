@@ -79,15 +79,16 @@ h3
     font-weight: bold;
     text-decoration: none;
 
-    transition: scale 0.25s ease-out;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
 }
 
 #headnav a:hover{
     /*rotate: 360deg;
     transition: rotate 0.35s ease-in-out;*/
     
-    scale: 1.5;
-    transition: scale 0.5s ease-in-out;
+    transform: scale(1.25);
+    transition: transform 0.5s ease-in-out;
 }
 
 #artnav{
@@ -200,14 +201,14 @@ a{
 .linkItem
 {
     text-align: center;
-    scale:100%;
-    transition: scale 0.25s ease-out;
+    transform: scale(1);
+    transition: transform 0.25s ease-out;
 }
 
 .linkItem:hover
 {
-    scale:110%;
-    transition: scale 0.15s ease-in-out;
+    transform: scale(1.15);
+    transition: transform 0.25s ease-out;
 }
 
 #discordBanner
@@ -224,17 +225,18 @@ a{
     border-radius:1em;
     display: flex;
 
-    scale:100%;
-    transition: scale 0.25s ease-out;
+    transform: scale(1);
+    transition: transform 0.25s ease-out;
 }
 
 #discordBanner:hover
 {
-    background-image: none;
-    background-color:#6131c1;
-    box-shadow:0px 0.35em#381b71;
-    scale:105%;
-    transition: scale 0.65s ease-in-out;
+
+    
+    border: 2px solid yellow;
+
+    transform: scale(1.05);
+    transition: transform 0.25s ease-out;
 }
 
 #discordBanner svg
@@ -357,6 +359,12 @@ th
     padding-right: 1em;
     font-size: 1.2em;
     background-color: #55396b;
+}
+
+thead
+{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
 }
 
 #favGames, th, td
@@ -484,14 +492,14 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         display: inline-block;
         text-decoration: none;
 
-        scale: 100%;
-        transition: scale 0.15s ease-in-out ;
+        transform: scale(1);
+        transition: transform 0.15s ease-in-out ;
     }
 
     #art:hover
     {
-        scale: 110%;
-        transition: scale 0.25s ease-in-out ;
+        transform: scale(1.1);
+        transition: transform 0.25s ease-in-out ;
     }
 
     #mus
@@ -634,12 +642,14 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         display: inline-block;
         text-decoration: none;
 
-        scale: 90%;
+        transform: scale(0.9);
+        transition: transform 0.15s ease-in-out ;
     }
 
     #art:hover
     {
-        scale: 100%;
+        transform: scale(1);
+        transition: transform 0.15s ease-in-out ;
     }
 
     #links
