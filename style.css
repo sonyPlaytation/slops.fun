@@ -1,4 +1,13 @@
 
+:root
+{
+    /*COLORS*/
+    --menu-trim: #562067;
+    --text-main: #ffb700;
+    --text-shadow: #770045;
+    --link-shadow: #da007f;
+}
+
 body
 {
     background-color: #230f27;
@@ -9,7 +18,7 @@ body
 main{
     border-radius:50px;
     
-    color: #ffb700;
+    color: var(--text-main);
     font-family: Verdana;
     font-size: 1em;
     margin-left: 5%;
@@ -34,9 +43,32 @@ main{
     background-color: #562067;
     background-image: url("images/wavy.gif");
     padding: 0.5em;
-    text-shadow: 3px 3px 0 rgb(218, 0, 127);
+    
     font-weight: bold;
     margin-bottom: 0px;
+}
+
+#herotext
+{
+    color: var(--text-main);
+    text-shadow: 4px 4px 0 var(--link-shadow);
+    transform: rotate(0deg);
+
+    transition: transform 5s ease-in-out, 
+                text-shadow 5s ease-in-out,
+                color 5s ease-in-out;
+}
+
+#herotext:hover
+{
+    color: var(--text-main);
+    text-shadow: 6px 6px 0 var(--link-shadow);
+    transform: rotate(5deg);
+
+    transition: transform 5s ease-in-out, 
+                text-shadow 5s ease-in-out,
+                color 5s ease-in-out;
+    
 }
 
 h1 em
@@ -67,19 +99,17 @@ h3
 
 #headnav{
     padding: 1em;
-    background-color:#562067;
+    background-color: var(--menu-trim);
 }
 
 #headnav a
 {
     font-size: 2em;
-    color: #ffb700;
-    text-shadow: 2px 2px 0 rgb(119, 0, 69);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
+    text-shadow: 2px 2px 0 var(--link-shadow);
 
-    transform: scale(1);
+    transform: scale(1);   
     transition: transform 0.25s ease-in-out;
 }
 
@@ -92,16 +122,17 @@ h3
 }
 
 #artnav{
+    position: sticky;
+    top: 0;
     padding: 1em;
     background-color:#562067;
+    z-index: 999;
+    box-shadow: 0px 5px 1em black;
 }
 
 #artnav a
 {
     font-size: 2em;
-    color: #ffb700;
-    text-shadow: 2px 2px 0 rgb(119, 0, 69);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
@@ -116,27 +147,20 @@ h3
     max-width: 50%;
 }
 
-p
-{
-    line-height: 1.5em;
-}
+p{  line-height: 1.5em; }
 
-#subheader
-{
+#subheader{
     margin: auto;
     max-width: 95%;
     padding-bottom: 1.5em; 
 }
 
-
-p strong
-{
+p strong{
     color: #00ff95;
     text-shadow: 2px 2px 0 rgb(0, 74, 164);
 }
 
-#img1
-{
+#img1{
     float:right;    
     width: 50%;
     margin: auto 2%;
@@ -147,49 +171,42 @@ p strong
     text-shadow: 3px 3px 0 rgb(0, 74, 164);
 }
 
-#compy
-{
+#compy{
     width: 75%;
     max-width: 700px;
     border-radius: 30px;
     box-shadow: 0px 0.1em 0.75em black
 }
 
-footer
-{
+footer{
     border-bottom-left-radius:50px;
     border-bottom-right-radius:50px;
-    background-color:#562067;
+    background-color: var(--menu-trim);
     padding: 1em;
 }
 
 a{
-    color: #ffb700;
-    text-shadow: 2px 2px 0 rgb(119, 0, 69);
+    color: var(--text-main);
+    text-shadow: 2px 2px 0 var(--text-shadow);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
-#copyright
-{
+#copyright{
     margin-top: 25px;
     display: block;
     width: 100%;
     text-align: center;
     font-family: verdana;
-    color:#ffb700;
+    color: var(--text-main)
 }
 
 #links a
 {
     font-size: 1.7em;
-    color: #ffb700;
     text-shadow: 2px 2px 0 rgb(119, 0, 69);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    text-decoration: none;
-    text-align: center;
 }
 
 #links svg
@@ -231,9 +248,7 @@ a{
 
 #discordBanner:hover
 {
-
-    
-    border: 2px solid yellow;
+    border: 2px solid var(--text-main);
 
     transform: scale(1.05);
     transition: transform 0.25s ease-out;
@@ -332,7 +347,7 @@ a{
     margin: 0px;
     padding:1em;
     border-radius: 1em;
-    background-color:#562067;
+    background-color: var(--menu-trim);
     font-size: 1.25em;
     font-weight: bold;
     text-align: left;
