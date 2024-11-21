@@ -301,28 +301,45 @@ a{
     max-width: 100%;
 }
 
+.gamecase
+{
+    display: flex;
+    width: 96%;
+    margin: auto;
+    justify-content: space-around;
+}
+
 .caseleft
 {
-    margin-left: 2%;
-    align-content: center;
-    max-width: 48%;
+    min-width: 50%;
+    margin-right: 2em;
+    width: 100%;
+    max-width: 50%;
+}
+.caseright
+{
+    min-width: 48%;
+    margin-bottom: auto;
+}
+
+#lilNewt
+{
+    display: none;
 }
 
 .gamedesc
 {
-    display:block;
-    float: right;
+    margin: 0px;
     padding:1em;
-    margin-right: 2%;
-    margin-top: 0%;
     border-radius: 1em;
     background-color:#562067;
     font-size: 1.25em;
     font-weight: bold;
     text-align: left;
-    max-width: 43%;
+    
     box-shadow: 0px 0.5em 0.75em black
 }
+    
 
 .gamedescMOBILE
 {
@@ -666,6 +683,12 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
     form
     {
         width: 100%;
+    }
+
+    #lilNewt
+    {
+        display: block;
+        margin: auto;
     }
 
 }
