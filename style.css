@@ -254,24 +254,20 @@ a{
     transition: transform 0.25s ease-out;
 }
 
-#discordBanner svg
-{
+#discordBanner svg{
     margin: auto;
     height: 4em;
 }
 
-#musabout
-{
+#musabout{
     text-shadow: 2px 2px 0 #a40060;
 }
 
-#gamesabout
-{
+#gamesabout{
     text-shadow: 2px 2px 0 #a40060;
 }
 
-#newtHEAD
-{
+#newtHEAD{
     text-align: center;
 
     margin: 0px;
@@ -281,8 +277,7 @@ a{
     text-shadow: 3px 3px 0 rgb(0, 74, 164);
 }
 
-#gamesNewtBanner
-{
+#gamesNewtBanner{
     display: flex;
     width: 85%;
     height: auto;
@@ -303,42 +298,36 @@ a{
     text-shadow: 0px 0px 5px rgb(255, 230, 0);
 }
 
-.trailer
-{
+.trailer{
     width: 100%;
     aspect-ratio: 16/9;
     margin-bottom: 1em;
 }
 
-.itchio
-{
+.itchio{
     width: 100%;
     max-width: 100%;
 }
 
-.gamecase
-{
+.gamecase{
     display: flex;
     width: 96%;
     margin: auto;
     justify-content: space-around;
 }
 
-.caseleft
-{
+.caseleft{
     min-width: 50%;
     margin-right: 2em;
     width: 100%;
     max-width: 50%;
 }
-.caseright
-{
+.caseright{
     min-width: 48%;
     margin-bottom: auto;
 }
 
-#lilNewt
-{
+#lilNewt{
     display: none;
 }
 
@@ -354,10 +343,8 @@ a{
     
     box-shadow: 0px 0.5em 0.75em black
 }
-    
 
-.gamedescMOBILE
-{
+.gamedescMOBILE{
     display: none;
 }
 
@@ -550,14 +537,14 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
 
 @media(max-width: 850px)
 {
-    #herobanner
+    #herotext
     {
-        font-size: 3em;
+        font-size: 1.15em;
     }
 
     #headnav
     {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     #newtHEAD
