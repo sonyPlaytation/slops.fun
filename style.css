@@ -58,7 +58,7 @@ main{
 .lauren{
     left: 10%;
     position:absolute;
-    top: 103px;
+    top: 1.2em;
 }
 
 #herotext
@@ -737,11 +737,19 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
 
 }
 
-@media(min-width: 1921px)
+/* I have a 2K monitor, so I made a media query for 2K specifically */
+/* No idea what it looks like at 4K*/
+@media(min-width: 2560px)
 {
-    #herobanner
-    {
-        font-size: 8em;
+    
+    .lauren{
+        left: 11em;
+        top:64px;
+        scale: 1.5
+    }
+
+    #herotext{
+        font-size: 3em;
     }
 
     #about
