@@ -55,6 +55,12 @@ main{
     margin-bottom: 0px;
 }
 
+.lauren{
+    left: 10%;
+    position:absolute;
+    top: 103px;
+}
+
 #herotext
 {
     color: var(--text-main);
@@ -655,6 +661,10 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         margin-top: 0%;
         align-content: center;
         max-width: 100%;
+    }
+
+    .lauren{
+        display: none;
     }
 
     .gamedesc
