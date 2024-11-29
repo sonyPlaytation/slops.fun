@@ -269,13 +269,13 @@ a{
 }
 
 #musabout{
-    background-color: var(--menu-trim);
+   
     width: 87%;
     padding: 0.15em;
     margin: auto;
     text-shadow: 2px 2px 0 #a40060;
-    border-radius: 2em;
-    box-shadow:0px 3px 0.5em #000000;
+    
+    
 }
 
 #gamesabout{
@@ -328,6 +328,7 @@ a{
     display: flex;
     width: 96%;
     margin: auto;
+    margin-top: 1em;
     justify-content: space-around;
 }
 
@@ -342,6 +343,17 @@ a{
     margin-bottom: auto;
 }
 
+.musShill{
+    margin: auto;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    width: 30%;
+    padding: 0.25em;
+    background-color: #47315c;
+    line-height: 2em;
+    border-radius: 1em;;
+}
+
 #lilNewt{
     display: none;
 }
@@ -349,6 +361,7 @@ a{
 .gamedesc
 {
     margin: 0px;
+    margin-bottom: 1em;
     padding:1em;
     border-radius: 1em;
     background-color: var(--menu-trim);
@@ -356,7 +369,7 @@ a{
     font-weight: bold;
     text-align: left;
     
-    box-shadow: 0px 0.5em 0.75em black
+    box-shadow: 0px 0px 1em black
 }
 
 .gamedescMOBILE{
@@ -389,6 +402,7 @@ iframe
 
 th
 {
+    line-height:2.5em;
     padding-left: 1em;
     padding-right: 1em;
     font-size: 1.2em;
