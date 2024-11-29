@@ -1,4 +1,13 @@
 
+:root
+{
+    /*COLORS*/
+    --menu-trim: #562067;
+    --text-main: #ffb700;
+    --text-shadow: #770045;
+    --link-shadow: #da007f;
+}
+
 body
 {
     background-color: #230f27;
@@ -6,10 +15,14 @@ body
     background-position-x: center;
 }
 
+hr{
+    border: 2px solid var(--menu-trim);
+}
+
 main{
     border-radius:50px;
     
-    color: #ffb700;
+    color: var(--text-main);
     font-family: Verdana;
     font-size: 1em;
     margin-left: 5%;
@@ -20,23 +33,50 @@ main{
     padding-bottom: 0px;
   }
 
-#disclaimer{
+.disclaimer{
     margin: 0;
-    font-size: 0.75em;
+    font-size: 1em;
     background-color: red;
+    text-shadow: 0px 3px 0px #a40060;
+    line-height: 2em;
 }
 
 #herobanner
 {
-    font-size:5em;
+    font-size:2.65em;
     border-top-left-radius:50px;
     border-top-right-radius:50px;
     background-color: #562067;
     background-image: url("images/wavy.gif");
     padding: 0.5em;
-    text-shadow: 3px 3px 0 rgb(218, 0, 127);
+    
     font-weight: bold;
+    margin-top:2em;
     margin-bottom: 0px;
+}
+
+#herotext
+{
+    color: var(--text-main);
+    text-shadow: 4px 4px 0 var(--link-shadow);
+    transform: rotate(0deg);
+    line-height: 0.25em;
+
+    transition: transform 5s ease-in-out, 
+                text-shadow 5s ease-in-out,
+                color 5s ease-in-out;
+}
+
+#herotext:hover
+{
+    color: var(--text-main);
+    text-shadow: 6px 6px 0 var(--link-shadow);
+    transform: rotate(5deg);
+
+    transition: transform 5s ease-in-out, 
+                text-shadow 5s ease-in-out,
+                color 5s ease-in-out;
+    
 }
 
 h1 em
@@ -67,19 +107,17 @@ h3
 
 #headnav{
     padding: 1em;
-    background-color:#562067;
+    background-color: var(--menu-trim);
 }
 
 #headnav a
 {
     font-size: 2em;
-    color: #ffb700;
-    text-shadow: 2px 2px 0 rgb(119, 0, 69);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
+    text-shadow: 2px 2px 0 var(--link-shadow);
 
-    transform: scale(1);
+    transform: scale(1);   
     transition: transform 0.25s ease-in-out;
 }
 
@@ -92,16 +130,17 @@ h3
 }
 
 #artnav{
+    position: sticky;
+    top: 0;
     padding: 1em;
     background-color:#562067;
+    z-index: 999;
+    box-shadow: 0px 5px 1em black;
 }
 
 #artnav a
 {
     font-size: 2em;
-    color: #ffb700;
-    text-shadow: 2px 2px 0 rgb(119, 0, 69);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
@@ -116,27 +155,20 @@ h3
     max-width: 50%;
 }
 
-p
-{
-    line-height: 1.5em;
-}
+p{  line-height: 1.5em; }
 
-#subheader
-{
+#subheader{
     margin: auto;
     max-width: 95%;
     padding-bottom: 1.5em; 
 }
 
-
-p strong
-{
+p strong{
     color: #00ff95;
     text-shadow: 2px 2px 0 rgb(0, 74, 164);
 }
 
-#img1
-{
+#img1{
     float:right;    
     width: 50%;
     margin: auto 2%;
@@ -147,52 +179,46 @@ p strong
     text-shadow: 3px 3px 0 rgb(0, 74, 164);
 }
 
-#compy
-{
+#compy{
     width: 75%;
     max-width: 700px;
     border-radius: 30px;
     box-shadow: 0px 0.1em 0.75em black
 }
 
-footer
-{
+footer{
     border-bottom-left-radius:50px;
     border-bottom-right-radius:50px;
-    background-color:#562067;
+    background-color: var(--menu-trim);
     padding: 1em;
 }
 
 a{
-    color: #ffb700;
-    text-shadow: 2px 2px 0 rgb(119, 0, 69);
+    color: var(--text-main);
+    text-shadow: 2px 2px 0 var(--text-shadow);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
-#copyright
-{
-    margin-top: 25px;
+#copyright{
+    margin-top: 3em;
+    margin-bottom: 3em;
     display: block;
     width: 100%;
     text-align: center;
     font-family: verdana;
-    color:#ffb700;
+    color: var(--text-main)
 }
 
-#links a
+.links a
 {
     font-size: 1.7em;
-    color: #ffb700;
     text-shadow: 2px 2px 0 rgb(119, 0, 69);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    text-decoration: none;
-    text-align: center;
 }
 
-#links svg
+.links svg
 {
     width: 1em;
     fill: white;
@@ -231,32 +257,32 @@ a{
 
 #discordBanner:hover
 {
-
-    
-    border: 2px solid yellow;
+    border: 2px solid var(--text-main);
 
     transform: scale(1.05);
     transition: transform 0.25s ease-out;
 }
 
-#discordBanner svg
-{
+#discordBanner svg{
     margin: auto;
     height: 4em;
 }
 
-#musabout
-{
+#musabout{
+    background-color: var(--menu-trim);
+    width: 87%;
+    padding: 0.15em;
+    margin: auto;
+    text-shadow: 2px 2px 0 #a40060;
+    border-radius: 2em;
+    box-shadow:0px 3px 0.5em #000000;
+}
+
+#gamesabout{
     text-shadow: 2px 2px 0 #a40060;
 }
 
-#gamesabout
-{
-    text-shadow: 2px 2px 0 #a40060;
-}
-
-#newtHEAD
-{
+#newtHEAD{
     text-align: center;
 
     margin: 0px;
@@ -266,8 +292,7 @@ a{
     text-shadow: 3px 3px 0 rgb(0, 74, 164);
 }
 
-#gamesNewtBanner
-{
+#gamesNewtBanner{
     display: flex;
     width: 85%;
     height: auto;
@@ -288,42 +313,36 @@ a{
     text-shadow: 0px 0px 5px rgb(255, 230, 0);
 }
 
-.trailer
-{
+.trailer{
     width: 100%;
     aspect-ratio: 16/9;
     margin-bottom: 1em;
 }
 
-.itchio
-{
+.itchio{
     width: 100%;
     max-width: 100%;
 }
 
-.gamecase
-{
+.gamecase{
     display: flex;
     width: 96%;
     margin: auto;
     justify-content: space-around;
 }
 
-.caseleft
-{
+.caseleft{
     min-width: 50%;
     margin-right: 2em;
     width: 100%;
     max-width: 50%;
 }
-.caseright
-{
+.caseright{
     min-width: 48%;
     margin-bottom: auto;
 }
 
-#lilNewt
-{
+#lilNewt{
     display: none;
 }
 
@@ -332,17 +351,15 @@ a{
     margin: 0px;
     padding:1em;
     border-radius: 1em;
-    background-color:#562067;
+    background-color: var(--menu-trim);
     font-size: 1.25em;
     font-weight: bold;
     text-align: left;
     
     box-shadow: 0px 0.5em 0.75em black
 }
-    
 
-.gamedescMOBILE
-{
+.gamedescMOBILE{
     display: none;
 }
 
@@ -416,8 +433,8 @@ form
 #headnav a:visited{color: #ff6478;}
 #headnav a:hover{color: #00ff95; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
 
-#links a:visited{color: #ff6478;}
-#links a:hover{color: #00ff95; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
+.links a:visited{color: #ff6478;}
+.links a:hover{color: #00ff95; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
 
 figcaption a:visited{color: #ff6478;}
 figcaption a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
@@ -445,7 +462,7 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         justify-content:space-around;
     }
 
-    #links
+    .links
     {
         display:flex;
         justify-content:space-around;
@@ -462,7 +479,7 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         flex: 1;
     }
 
-    #artBox
+    .artBox
     {
         margin: 2%;
         padding: 1em;
@@ -479,14 +496,14 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         
     }
 
-    #artcol
+    .artcol
     {
         margin-left: auto;
         margin-right: auto;
         align-content: space-around;
     }
 
-    #artcol img 
+    .artcol img 
     {
         max-height: 500px;
         display: block;
@@ -494,13 +511,13 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         border-radius: 1em;
         box-shadow: 0px 0px 10px#000000;
     }
-    #artcol figcaption
+    .artcol figcaption
     {
         text-align: center;
         margin: 0.5em;
     }
 
-    #art
+    .art
     {
         margin-right: 15px;
         margin-left: 15px;
@@ -513,7 +530,7 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         transition: transform 0.15s ease-in-out ;
     }
 
-    #art:hover
+    .art:hover
     {
         transform: scale(1.1);
         transition: transform 0.25s ease-in-out ;
@@ -526,23 +543,26 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
 
     .music
     {
+        width: 500px;
+        height: auto;
         margin: auto;
         align-content: space-between;
         max-width: 45%;
+        aspect-ratio: 8/10;
     }
 }
 
 
 @media(max-width: 850px)
 {
-    #herobanner
+    #herotext
     {
-        font-size: 3em;
+        font-size: 1.15em;
     }
 
     #headnav
     {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     #newtHEAD
@@ -669,7 +689,7 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         transition: transform 0.15s ease-in-out ;
     }
 
-    #links
+    .links
     {
         font-size: 0.8em;
     }
