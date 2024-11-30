@@ -56,9 +56,15 @@ main{
 }
 
 .lauren{
+    image-rendering: pixelated;
     left: 10%;
     position:absolute;
-    top: 1.2em;
+    top: 1.15em;
+}
+
+.lauren:active{
+    transform:scaleY(0.95) scaleX(1.05) ;
+    top: 1.3em;
 }
 
 #herotext
@@ -746,6 +752,11 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         left: 11em;
         top:64px;
         scale: 1.5
+    }
+
+    .lauren:active{
+        transform:scaleY(0.95) scaleX(1.05);
+        top: 1.7em;
     }
 
     #herotext{
