@@ -392,6 +392,7 @@ iframe
 {
     box-shadow: 0px 0px 1em #000000;
     border-radius: 1em;
+    border: 0;
 }
 
 #favGames
@@ -697,12 +698,12 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         width: 100%;
     }   
 
-    #artcol figcaption
+    .artcol figcaption
     {
         display: none;
     }
 
-    #art
+    .art
     {
         margin: 0px;
         padding: 0px;
@@ -713,7 +714,7 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         transition: transform 0.15s ease-in-out ;
     }
 
-    #art:hover
+    .art:hover
     {
         transform: scale(1);
         transition: transform 0.15s ease-in-out ;
@@ -750,13 +751,13 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
     
     .lauren{
         left: 11em;
-        top:64px;
-        scale: 1.5
+        top:1.5em;
+        transform: scale(1.5);
     }
 
     .lauren:active{
-        transform:scaleY(0.95) scaleX(1.05);
-        top: 1.7em;
+        transform:scaleY(1.35) scaleX(1.55);
+        top: 1.88em;
     }
 
     #herotext{
@@ -773,7 +774,7 @@ a:hover{color: #ffffff; text-shadow: 3px 3px 0 rgb(0, 74, 164);}
         font-size: 1.5em;
     }
 
-    #artDesc
+    .artDesc
     {
         font-size: 2em;
         text-align: center;
